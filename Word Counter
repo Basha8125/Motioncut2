@@ -1,0 +1,22 @@
+def word_counter(text):
+    # Remove leading and trailing whitespaces
+    text = text.strip()
+    
+    # Split the text into words based on whitespaces
+    words = text.split()
+    
+    # Return the count of words
+    return len(words)
+
+def main():
+    # Input a sentence or paragraph
+    text = input("Enter a sentence or paragraph: ")
+    
+    # Count the number of words
+    word_count = word_counter(text)
+    
+    # Output the result
+    print("Number of words:", word_count)
+
+if __name__ == "__main__":
+    main()
